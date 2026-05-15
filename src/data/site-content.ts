@@ -1,82 +1,50 @@
 export const repoUrl = 'https://github.com/timstudent01/codex-mobile-chat'
 
 export const features = [
-  {
-    title: 'Mobile-First Chat UI',
-    description:
-      'A clean ChatGPT-like experience optimized for phone screens, while still feeling natural on desktop.',
-  },
-  {
-    title: 'Local Session Browser',
-    description:
-      'Reads from ~/.codex/session_index.jsonl so you can continue any existing Codex thread instantly.',
-  },
-  {
-    title: 'Real-Time Streaming',
-    description:
-      'NDJSON streaming endpoint keeps the conversation feeling live with status, chunks, and completion events.',
-  },
-  {
-    title: 'New Session from UI',
-    description:
-      'Create fresh sessions from the browser without dropping to terminal commands.',
-  },
-  {
-    title: 'Image Upload Support',
-    description:
-      'Share screenshots and reference images directly in chat with in-thread preview.',
-  },
-  {
-    title: 'Built for Self-Hosted Workflows',
-    description:
-      'Bun + Hono stack with straightforward deployment options for private network access.',
-  },
+  { titleId: 'feature.mobile.title', descriptionId: 'feature.mobile.desc' },
+  { titleId: 'feature.session.title', descriptionId: 'feature.session.desc' },
+  { titleId: 'feature.stream.title', descriptionId: 'feature.stream.desc' },
+  { titleId: 'feature.new.title', descriptionId: 'feature.new.desc' },
+  { titleId: 'feature.image.title', descriptionId: 'feature.image.desc' },
+  { titleId: 'feature.selfhost.title', descriptionId: 'feature.selfhost.desc' },
 ]
 
 export const plans = [
   {
-    name: 'Starter',
-    price: 'Free',
-    detail: 'For personal use and local experimentation.',
-    points: ['1 local instance', 'Basic chat history', 'Community support'],
+    nameId: 'plan.starter.name',
+    priceId: 'plan.starter.price',
+    detailId: 'plan.starter.detail',
+    pointIds: ['plan.starter.p1', 'plan.starter.p2', 'plan.starter.p3'],
   },
   {
-    name: 'Pro',
-    price: '$12/mo',
-    detail: 'For solo builders and power users.',
-    points: [
-      'Unlimited sessions',
-      'Advanced stream monitoring',
-      'Priority issue response',
-    ],
+    nameId: 'plan.pro.name',
+    priceId: 'plan.pro.price',
+    detailId: 'plan.pro.detail',
+    pointIds: ['plan.pro.p1', 'plan.pro.p2', 'plan.pro.p3'],
     highlight: true,
   },
   {
-    name: 'Team',
-    price: '$39/mo',
-    detail: 'For small teams running shared workflows.',
-    points: [
-      'Multi-user workspace guidelines',
-      'Deployment playbooks',
-      'Migration and onboarding support',
-    ],
+    nameId: 'plan.team.name',
+    priceId: 'plan.team.price',
+    detailId: 'plan.team.detail',
+    pointIds: ['plan.team.p1', 'plan.team.p2', 'plan.team.p3'],
   },
 ]
 
 export const teamMembers = [
   {
     name: 'Tim Chen',
-    role: 'Founder & Product Engineer',
-    bio: 'Focuses on practical AI tooling that shortens feedback loops for local development teams.',
+    roleId: 'team.tim.role',
+    bioId: 'team.tim.bio',
   },
   {
     name: 'Avery Lin',
-    role: 'Frontend Experience',
-    bio: 'Designs mobile-first interfaces that stay fast, clear, and easy to adopt.',
+    roleId: 'team.avery.role',
+    bioId: 'team.avery.bio',
   },
   {
     name: 'Noah Wu',
-    role: 'Infrastructure',
-    bio: 'Builds reliable self-hosted deployment paths and secure networking guidance.',
+    roleId: 'team.noah.role',
+    bioId: 'team.noah.bio',
   },
 ]

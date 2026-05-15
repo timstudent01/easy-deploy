@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { FormattedMessage } from 'react-intl'
 
 type HeroProps = {
   repoUrl: string
@@ -9,25 +10,24 @@ export function Hero({ repoUrl }: HeroProps) {
     <section className="grid gap-8 py-16 md:grid-cols-2 md:items-center md:py-24">
       <div>
         <p className="mb-4 inline-flex rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700">
-          Bun + Hono + Codex CLI
+          <FormattedMessage id="hero.badge" />
         </p>
         <h1 className="text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
-          Bring Your Local Codex Sessions to Any Device
+          <FormattedMessage id="hero.title" />
         </h1>
         <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 md:text-lg">
-          codex-mobile-chat is a mobile-friendly interface for browsing, continuing,
-          and creating Codex sessions through a fast local web app.
+          <FormattedMessage id="hero.description" />
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button size="lg" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-            Start Now
+            <FormattedMessage id="hero.cta.start" />
           </Button>
           <Button
             size="lg"
             variant="outline"
             onClick={() => window.open(repoUrl, '_blank', 'noopener,noreferrer')}
           >
-            View Repository
+            <FormattedMessage id="hero.cta.repo" />
           </Button>
         </div>
       </div>
@@ -42,7 +42,7 @@ export function Hero({ repoUrl }: HeroProps) {
 }`}</pre>
         </div>
         <p className="mt-4 text-sm text-slate-500">
-          Lightweight APIs and streaming responses make UI updates feel immediate.
+          <FormattedMessage id="hero.api.note" />
         </p>
       </div>
     </section>
