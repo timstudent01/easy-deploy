@@ -6,6 +6,7 @@ import {
   Server,
   Waves,
 } from 'lucide-react'
+import { FadeInOnView } from '@/components/fade-in-on-view'
 import { FormattedMessage } from 'react-intl'
 
 type Feature = {
@@ -40,17 +41,19 @@ export function Features({ features }: FeaturesProps) {
           const Icon = featureIcons[index % featureIcons.length]
 
           return (
-            <article key={feature.titleId} className="rounded-2xl border border-slate-200 bg-white p-5">
-              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 text-sky-700">
-                <Icon className="h-5 w-5" aria-hidden="true" />
-              </div>
-              <h3 className="text-lg font-semibold">
-                <FormattedMessage id={feature.titleId} />
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                <FormattedMessage id={feature.descriptionId} />
-              </p>
-            </article>
+            <FadeInOnView key={feature.titleId} delayMs={index * 90}>
+              <article className="rounded-2xl border border-slate-200 bg-white p-5">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 text-sky-700">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <h3 className="text-lg font-semibold">
+                  <FormattedMessage id={feature.titleId} />
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  <FormattedMessage id={feature.descriptionId} />
+                </p>
+              </article>
+            </FadeInOnView>
           )
         })}
       </div>
