@@ -31,10 +31,10 @@ export function Hero({ repoUrl }: HeroProps) {
           </Button>
         </div>
       </div>
-      <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_16px_70px_-30px_rgba(15,23,42,0.45)]">
+      <div className="min-w-0 rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_16px_70px_-30px_rgba(15,23,42,0.45)]">
         <div className="rounded-2xl bg-slate-950 p-4">
           <p className="font-mono text-xs text-emerald-300">GET /api/sessions</p>
-          <pre className="mt-3 overflow-auto rounded-xl bg-slate-900 p-4 text-xs leading-relaxed text-slate-100">{`{
+          <pre className="mt-3 overflow-x-auto whitespace-pre-wrap break-words rounded-xl bg-slate-900 p-3 text-[11px] leading-relaxed text-slate-100 md:p-4 md:text-xs">{`{
   "sessions": [
     { "id": "019d...", "title": "Build deploy flow" },
     { "id": "01ab...", "title": "UI refactor notes" }
