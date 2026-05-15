@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl'
 export function DemoVideo() {
   return (
     <section className="py-4">
-      <div className="rounded-3xl border border-sky-200/70 bg-gradient-to-br from-sky-50 via-cyan-50 to-white p-5 shadow-[0_18px_60px_-40px_rgba(2,132,199,0.55)] md:p-6">
+      <div className="py-4">
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
           <FormattedMessage id="video.title" />
         </h2>
