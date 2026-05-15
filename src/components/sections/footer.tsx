@@ -1,3 +1,4 @@
+import { SquareTerminal } from 'lucide-react'
 import { FormattedMessage } from 'react-intl'
 
 type FooterProps = {
@@ -11,7 +12,8 @@ export function Footer({ repoUrl }: FooterProps) {
         <p><FormattedMessage id="footer.copyright" /></p>
         <div className="flex gap-4">
           <a href="#top" className="hover:text-sky-700"><FormattedMessage id="footer.top" /></a>
-          <a href={repoUrl} target="_blank" rel="noreferrer" className="hover:text-sky-700">
+          <a href={repoUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-sky-700">
+            <SquareTerminal className="h-4 w-4" aria-hidden="true" />
             <FormattedMessage id="footer.repo" />
           </a>
         </div>

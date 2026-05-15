@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import type { Locale } from '@/i18n'
+import { SquareTerminal } from 'lucide-react'
 import { FormattedMessage } from 'react-intl'
 
 type NavbarProps = {
@@ -29,6 +30,7 @@ export function Navbar({ repoUrl, locale, onLocaleChange }: NavbarProps) {
             <FormattedMessage id="lang.zh" />
           </Button>
           <Button onClick={() => window.open(repoUrl, '_blank', 'noopener,noreferrer')}>
+            <SquareTerminal className="mr-2 h-4 w-4" aria-hidden="true" />
             <FormattedMessage id="nav.github" />
           </Button>
         </div>

@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { Clock3, Mail, MapPin, Send, SquareTerminal } from 'lucide-react'
 import { FormattedMessage } from 'react-intl'
 
 type ContactProps = {
@@ -16,13 +17,14 @@ export function Contact({ repoUrl }: ContactProps) {
           <FormattedMessage id="contact.desc" />
         </p>
         <div className="mt-6 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
-          <p><FormattedMessage id="contact.email" /></p>
-          <p><FormattedMessage id="contact.github" /></p>
-          <p><FormattedMessage id="contact.response" /></p>
-          <p><FormattedMessage id="contact.location" /></p>
+          <p className="inline-flex items-center gap-2"><Mail className="h-4 w-4" aria-hidden="true" /><FormattedMessage id="contact.email" /></p>
+          <p className="inline-flex items-center gap-2"><SquareTerminal className="h-4 w-4" aria-hidden="true" /><FormattedMessage id="contact.github" /></p>
+          <p className="inline-flex items-center gap-2"><Clock3 className="h-4 w-4" aria-hidden="true" /><FormattedMessage id="contact.response" /></p>
+          <p className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" aria-hidden="true" /><FormattedMessage id="contact.location" /></p>
         </div>
         <div className="mt-6 flex gap-3">
           <Button size="lg" onClick={() => (window.location.href = 'mailto:hello@codexmobile.chat')}>
+            <Send className="mr-2 h-4 w-4" aria-hidden="true" />
             <FormattedMessage id="contact.send" />
           </Button>
           <Button
@@ -30,6 +32,7 @@ export function Contact({ repoUrl }: ContactProps) {
             variant="outline"
             onClick={() => window.open(repoUrl, '_blank', 'noopener,noreferrer')}
           >
+            <SquareTerminal className="mr-2 h-4 w-4" aria-hidden="true" />
             <FormattedMessage id="contact.open" />
           </Button>
         </div>
