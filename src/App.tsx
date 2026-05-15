@@ -23,7 +23,7 @@ function App() {
       <div className="min-h-screen bg-[radial-gradient(120%_90%_at_0%_0%,#fff2e8_0%,#fdf7f2_35%,#f7fbff_68%,#eef6ff_100%)] text-slate-900">
         <Navbar repoUrl={repoUrl} locale={locale} onLocaleChange={setLocale} />
         <main id="top" className="w-full">
-          <HeroTextBlock />
+          <HeroTextBlock locale={locale} />
           <Container>
             <DemoVideo />
             <Features features={features} />
