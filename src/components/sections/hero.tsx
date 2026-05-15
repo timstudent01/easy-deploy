@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { FormattedMessage } from 'react-intl'
+import heroUserImage from '@/assets/hero-user.webp'
 
 type HeroProps = {
   repoUrl: string
@@ -32,14 +33,17 @@ export function Hero({ repoUrl }: HeroProps) {
         </div>
       </div>
       <div className="min-w-0 rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_16px_70px_-30px_rgba(15,23,42,0.45)]">
-        <div className="rounded-2xl bg-slate-950 p-4">
-          <p className="font-mono text-xs text-emerald-300">GET /api/sessions</p>
-          <pre className="mt-3 overflow-x-auto whitespace-pre-wrap break-words rounded-xl bg-slate-900 p-3 text-[11px] leading-relaxed text-slate-100 md:p-4 md:text-xs">{`{
-  "sessions": [
-    { "id": "019d...", "title": "Build deploy flow" },
-    { "id": "01ab...", "title": "UI refactor notes" }
-  ]
-}`}</pre>
+        <div className="overflow-hidden rounded-2xl border border-slate-200">
+          <div className="relative aspect-[16/10] w-full bg-slate-100">
+            <img
+              src={heroUserImage}
+              alt="codex-mobile-chat hero visual"
+              className="h-full w-full object-cover object-center"
+            />
+            <div className="absolute left-3 top-3 rounded-full bg-black/60 px-3 py-1 text-xs text-white">
+              codex-mobile-chat
+            </div>
+          </div>
         </div>
         <p className="mt-4 text-sm text-slate-500">
           <FormattedMessage id="hero.api.note" />
