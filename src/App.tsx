@@ -20,7 +20,7 @@ function App() {
 
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
-      <div className="min-h-screen bg-[radial-gradient(circle_at_top,#e8f3ff_0%,#f9fafb_45%,#ffffff_100%)] text-slate-900">
+      <div className="min-h-screen bg-[radial-gradient(120%_90%_at_0%_0%,#fff2e8_0%,#fdf7f2_35%,#f7fbff_68%,#eef6ff_100%)] text-slate-900">
         <Navbar repoUrl={repoUrl} locale={locale} onLocaleChange={setLocale} />
         <main id="top" className="w-full">
           <HeroTextBlock />
