@@ -4,10 +4,10 @@ export function DemoVideo() {
   return (
     <section className="py-4">
       <div className="py-4">
-        <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+        <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
           <FormattedMessage id="video.title" />
         </h2>
-        <p className="mt-2 text-slate-600">
+        <p className="mt-3 max-w-2xl text-slate-600">
           <FormattedMessage id="video.description" />
         </p>
         <div className="mt-5 overflow-hidden rounded-2xl border border-slate-200">
