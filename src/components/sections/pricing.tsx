@@ -15,7 +15,7 @@ type PricingProps = {
 
 export function Pricing({ plans }: PricingProps) {
   return (
-    <section id="pricing" className="py-14 md:py-20">
+    <section id="pricing" className="py-4">
       <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
         <FormattedMessage id="pricing.title" />
       </h2>

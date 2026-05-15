@@ -28,7 +28,7 @@ const featureIcons = [
 
 export function Features({ features }: FeaturesProps) {
   return (
-    <section id="features" className="py-14 md:py-20">
+    <section id="features" className="py-4">
       <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
         <FormattedMessage id="features.title" />
       </h2>

@@ -12,7 +12,7 @@ type TeamProps = {
 
 export function Team({ members }: TeamProps) {
   return (
-    <section id="team" className="py-14 md:py-20">
+    <section id="team" className="py-4">
       <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
         <FormattedMessage id="team.title" />
       </h2>

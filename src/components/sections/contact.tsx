@@ -8,7 +8,7 @@ type ContactProps = {
 
 export function Contact({ repoUrl }: ContactProps) {
   return (
-    <section id="contact" className="py-14 md:py-20">
+    <section id="contact" className="py-4">
       <div className="rounded-3xl border border-slate-200 bg-white p-8 md:p-10">
         <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
           <FormattedMessage id="contact.title" />

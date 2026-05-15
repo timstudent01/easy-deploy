@@ -2,7 +2,7 @@ import { FormattedMessage } from 'react-intl'
 
 export function DemoVideo() {
   return (
-    <section className="pb-8">
+    <section className="py-4">
       <div className="rounded-3xl border border-slate-200 bg-white p-5 md:p-6">
         <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
           <FormattedMessage id="video.title" />
